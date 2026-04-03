@@ -8,23 +8,19 @@ O AKOptimizer Pro evoluiu. Não é mais apenas um "limpador de registro". É uma
 
 ## 🚀 O que mudou na v2.0?
 
-- **Motor Transacional (`TransacaoSistema`)**  
-  Cada otimização é tratada como uma transação atômica. Se algo falha, o sistema executa **rollback automático** para o estado anterior.
+- **Motor Transacional (`TransacaoSistema`)** Cada otimização é tratada como uma transação atômica. Se algo falha, o sistema executa **rollback automático** para o estado anterior.
 
-- **Snapshot JSON do Sistema**  
-  Salva o plano de energia atual e as configurações de DNS antes de qualquer alteração. Restauração precisa e confiável.
+- **Instalador Profissional (Setup Corporativo)** O software agora conta com um instalador profissional limpo, que aplica atalhos e extrai o programa otimizado na velocidade da luz.
 
-- **Backup com Hash SHA256 (64KB buffer)**  
-  Todo arquivo modificado (.bin, texturas, áudio) recebe backup com hash criptográfico. Restauração só acontece se o backup for íntegro.
+- **Snapshot JSON do Sistema** Salva o plano de energia atual e as configurações de DNS antes de qualquer alteração. Restauração precisa e confiável.
 
-- **Threading Profissional**  
-  Monitor de ping com `threading.Event` (sem race conditions) e `QThread` com gerenciamento de memória. UI totalmente responsiva.
+- **Backup com Hash SHA256 (64KB buffer)** Todo arquivo modificado (.bin, texturas, áudio) recebe backup com hash criptográfico. Restauração só acontece se o backup for íntegro.
 
-- **Compatibilidade com Windows 11**  
-  Desativação completa da Game Bar, incluindo `GameConfigStore` e `GameDVR_FSEBehaviorMode=2` (tela cheia exclusiva).
+- **Threading Profissional** Monitor de ping com `threading.Event` (sem race conditions) e `QThread` com gerenciamento de memória. UI totalmente responsiva.
 
-- **Log de Auditoria Completo**  
-  Nenhum `except: pass` — tudo é registrado no arquivo `aika_optimizer.log` para rastreabilidade.
+- **Compatibilidade com Windows 11** Desativação completa da Game Bar, incluindo `GameConfigStore` e `GameDVR_FSEBehaviorMode=2` (tela cheia exclusiva).
+
+- **Log de Auditoria Completo** Nenhum `except: pass` — tudo é registrado no arquivo `aika_optimizer.log` para rastreabilidade.
 
 ---
 
@@ -65,14 +61,12 @@ O AKOptimizer Pro evoluiu. Não é mais apenas um "limpador de registro". É uma
 
 A v2.0 introduz uma **Central de Segurança** com dois botões:
 
-1. **DESFAZER OTIMIZAÇÕES DE SISTEMA**  
-   - Restaura o plano de energia original  
+1. **DESFAZER OTIMIZAÇÕES DE SISTEMA** - Restaura o plano de energia original  
    - Restaura o DNS original (com sanitização IPv4)  
    - Remove as chaves IFEO de prioridade de CPU  
    - Importa backups de registro do Windows
 
-2. **DESFAZER MODIFICAÇÕES NO JOGO**  
-   - Restaura todos os arquivos `.bin` e texturas modificados  
+2. **DESFAZER MODIFICAÇÕES NO JOGO** - Restaura todos os arquivos `.bin` e texturas modificados  
    - Valida integridade do backup antes de restaurar  
    - Preserva a estrutura original do jogo
 
@@ -84,14 +78,13 @@ A v2.0 introduz uma **Central de Segurança** com dois botões:
 - **Sem telemetria, sem coleta de dados**
 - **Rollback garantido** — diferencial competitivo: nenhuma alteração é permanente
 
-### ⚠️ Aviso de Falso Positivo (VirusTotal)
+### 🛡️ 100% Limpo e Certificado (VirusTotal)
 
-Devido às alterações profundas no Registro do Windows (otimização de CPU/Rede) e à injeção de arquivos na pasta do jogo (Mods/Áudio), alguns antivírus heurísticos podem interpretar o comportamento do AKOptimizer Pro como "Potencialmente Indesejado" (PUA), gerando **falsos positivos**.
+Graças à nossa nova arquitetura de instalação e compilação em formato de pasta transparente, o executável oficial alcançou a marca perfeita nos maiores antivírus do mercado. **Zero detecções de falsos positivos.**
 
-**🔍 [CLIQUE AQUI PARA VER O RELATÓRIO COMPLETO DO VIRUSTOTAL](https://www.virustotal.com/gui/file/50dcc84657cc7be63546cfcc9493477460b6f4448af7cf539c189a1cc9dd8e26)**
+**✅ [CLIQUE AQUI PARA VER O RELATÓRIO OFICIAL DO VIRUSTOTAL (0/69)](https://www.virustotal.com/gui/file/54f95638cb192a2b15a904fd6fe065d6e82e658625f4e20aff60b67af6d0c48c)**
 
-*Análise realizada em: Abril/2026*  
-*Principais antivírus (Microsoft Defender, Kaspersky, BitDefender, ESET) não apontam ameaça.*
+*Análise realizada em: Abril/2026*
 
 **Como verificar a segurança por conta própria:**
 1.  **Audite o código fonte** — disponível na íntegra neste repositório
@@ -115,18 +108,19 @@ Devido às alterações profundas no Registro do Windows (otimização de CPU/Re
 
 ## 🚀 Como Usar (v2.0)
 
-1. Baixe o arquivo `AikaOptimizerPro.zip` na aba **Releases** (senha: `123`)
-2. Extraia e execute **como Administrador** (obrigatório)
-3. Selecione as otimizações desejadas ou clique em "INICIAR OTIMIZAÇÃO"
-4. O jogo abrirá automaticamente ao final
-5. Para reverter: vá até a aba **🛡️ Segurança** e clique no rollback desejado
+Para garantir que o download ocorra sem interrupções de falsos positivos do navegador, o Instalador foi compactado com uma senha de segurança.
+
+1. Baixe o arquivo `Instalar_AikaOptimizer_V2_Gold.zip` na aba **Releases**.
+2. Extraia o arquivo utilizando a senha: **`123`**
+3. Execute o `Instalar_AikaOptimizer_V2_Gold.exe` e siga o assistente de instalação.
+4. Abra o Aika Optimizer Pro diretamente pelo atalho criado na sua Área de Trabalho!
+5. Para reverter qualquer alteração: vá até a aba **🛡️ Segurança** e clique no rollback desejado.
 
 ---
 
 ## 👨‍💻 Desenvolvido por
 
-**@diegobfr07**  
-*Python 100% | Arquitetura Transacional | Especialista em Otimização Windows*
+**@diegobfr07** *Python 100% | Arquitetura Transacional | Especialista em Otimização Windows*
 
 ---
 
