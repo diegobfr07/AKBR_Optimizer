@@ -1,4 +1,4 @@
-# ⚡ AKOptimizer Pro v2.0 Gold Edition
+# ⚡ Aika Optimizer Pro v2.0 Gold Edition
 
 **Motor de Performance, Injetor de Mods e Rollback Automático para Aika Online.**
 
