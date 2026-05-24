@@ -28,8 +28,8 @@ def injetar_mods(lista_arquivos_mods, pasta_jogo=PASTA_JOGO_PADRAO):
             for mod_caminho in lista_arquivos_mods:
                 nome_base_mod, ext_mod = os.path.splitext(os.path.basename(mod_caminho).lower())
                 
-                # Só injeta se for arquivo de imagem (DDS ou TGA). Ignora .meta, .txt, etc.
-                if ext_mod not in ['.dds', '.tga']:
+                # Permite injetar .bin, .jit, .dds, .tga, etc. Só ignora arquivos que são obviamente lixo.
+                if ext_mod in ['.meta', '.old', '.png', '.jpg', '.txt', '.ini']:
                     continue
 
                 destino = None
